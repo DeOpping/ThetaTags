@@ -1,0 +1,19 @@
+#
+#  Example tag file
+#  Follow the format shown in this file
+#  to add your own tags in here or another file!
+#
+#  Any file in the tags folder that starts with "_"
+#  will be disabled, and not loaded!
+#
+
+tags:
+
+  'example':
+    display-name: 'Example Tag'
+    display: '&eExample'
+    lock: true
+
+  'example-two':
+    display-name: '3xample Tag'
+    display: '&73xample'
