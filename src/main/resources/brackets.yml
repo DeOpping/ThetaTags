@@ -1,0 +1,17 @@
+brackets:
+
+  'none':
+    open: ''
+    closed: ''
+
+  'square':
+    open: '['
+    closed: ']'
+
+  curly:
+    open: '{'
+    closed: '}'
+
+  round:
+    open: '('
+    closed: ')'
