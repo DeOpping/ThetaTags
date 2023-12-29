@@ -17,6 +17,7 @@ public class ThetaLog {
 
     private static final String PREFIX = "[ThetaTags] ";
     private static final String DEBUG = "[&ei&r] ";
+    private static final String DIVIDER = "------------------------------";
 
     private static boolean format = true;
     private static boolean debugMode = false;
@@ -63,6 +64,14 @@ public class ThetaLog {
 
     public static void debug(@NotNull final Level level, @NotNull final String... input) {
         send(level, true, input);
+    }
+
+    public static void divider(final boolean debug) {
+        send(Level.INFO, debug, DIVIDER);
+    }
+
+    public static void divider() {
+        send(Level.INFO, false, DIVIDER);
     }
 
 }
