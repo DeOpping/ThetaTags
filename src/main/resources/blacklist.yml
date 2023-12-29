@@ -1,0 +1,11 @@
+#
+#
+#
+#
+
+
+# Blacklisted words
+words: []
+
+# Blacklisted regex patterns
+regex: []
