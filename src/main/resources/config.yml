@@ -1,0 +1,23 @@
+#
+#      #####
+#    #       #
+#   #         #    ThetaTags
+#   #  |###|  #    Developed by Mantice
+#   #         #    https://wiki.paracausal.dev
+#    #       #
+#      #####
+#
+
+
+######################################
+#                                    #
+#        Console Log Settings        #
+#                                    #
+######################################
+logging:
+
+  # Allow coloring in console messages?
+  format: true
+
+  # Send debug messages to console?
+  debug: false
