@@ -16,8 +16,10 @@ public class Config {
     private File file;
     private FileConfiguration fileConfiguration;
 
-    public Config(@NotNull final ThetaTags plugin, @NotNull final String fileName) {
+    public Config(@NotNull final ThetaTags plugin, @NotNull String fileName) {
         this.plugin = plugin;
+
+        if (!fileName.endsWith(".yml")) fileName += ".yml";
         this.fileName = fileName;
 
         save();
