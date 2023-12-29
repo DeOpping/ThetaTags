@@ -11,7 +11,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-public class TagBlacklist {
+public final class TagBlacklist {
 
     private final ThetaTags plugin;
     private static final Set<String> words = new HashSet<>();

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ListUtils {
+public final class ListUtils {
 
     public static @NotNull List<String> fromConfig(@NotNull final Config config, @NotNull final String path) {
         final Object o = config.options().get(path, null);

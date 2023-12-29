@@ -3,7 +3,7 @@ package dev.paracausal.thetatags.tags;
 import dev.paracausal.thetatags.configuration.Config;
 import org.jetbrains.annotations.NotNull;
 
-public class Tag {
+public final class Tag {
 
     private final String id;
     private final String displayName;

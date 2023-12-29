@@ -3,7 +3,7 @@ package dev.paracausal.thetatags.brackets;
 import dev.paracausal.thetatags.configuration.Config;
 import org.jetbrains.annotations.NotNull;
 
-public class Bracket {
+public final class Bracket {
 
     private final String id;
     private final String open;

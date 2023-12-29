@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
-public class TagManager {
+public final class TagManager {
 
     private final ThetaTags plugin;
     private final LinkedHashMap<String, Tag> tags = new LinkedHashMap<>();
@@ -25,7 +25,7 @@ public class TagManager {
     public void reload() {
         tags.clear();
         final File folder = new File(plugin.getDataFolder(), "tags");
-        if (!folder.exists()) new Config(plugin, "tags" + File.separator + "example");
+        if (!folder.exists()) new Config(plugin, "tags/example");
 
         final File[] files = folder.listFiles();
         if (files == null || files.length == 0) {
@@ -41,7 +41,7 @@ public class TagManager {
             if (fileName.startsWith("_") || !fileName.endsWith(".yml")) continue;
 
             final String fileId = fileName.substring(0, fileName.length()-4);
-            final Config config = new Config(plugin, "tags" + File.separator + fileId);
+            final Config config = new Config(plugin, "tags/" + fileId);
 
             final ConfigurationSection tagSection = config.options().getConfigurationSection("tags");
             if (tagSection == null) continue;

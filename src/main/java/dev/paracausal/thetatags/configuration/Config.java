@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import java.io.File;
 import java.io.IOException;
 
-public class Config {
+public final class Config {
 
     private final ThetaTags plugin;
     private final String fileName;

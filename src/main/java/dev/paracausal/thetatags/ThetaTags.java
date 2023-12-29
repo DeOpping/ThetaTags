@@ -6,7 +6,7 @@ import dev.paracausal.thetatags.tags.TagBlacklist;
 import dev.paracausal.thetatags.utils.logger.ThetaLog;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class ThetaTags extends JavaPlugin {
+public final class ThetaTags extends JavaPlugin {
 
     private Config configYml;
     private Config bracketsYml;

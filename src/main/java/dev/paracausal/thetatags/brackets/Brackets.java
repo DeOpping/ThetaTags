@@ -7,7 +7,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.LinkedHashMap;
 
-public class Brackets {
+public final class Brackets {
 
     private final ThetaTags plugin;
     private final LinkedHashMap<String, Bracket> brackets = new LinkedHashMap<>();
